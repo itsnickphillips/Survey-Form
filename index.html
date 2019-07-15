@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Marvel Survey</title>
+  <meta name="description" content="Marvel-Survey" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Nicholas Phillips" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Survey</h1>
+
+  <!-- Form section -->
+  <div id="form-outer">
+    <p id="description">A short survey about super heros</p>
+
+    <form id="survey-form">
+
+      <!-- Name Label -->
+      <div id="rowTab">
+        <div class="labels">
+          <label id="name-label">*Name </label>
+        </div>
+      </div>
+      <!-- Name Label -->
+
+      <!-- Name Entry Field -->
+      <div id="rightTab">
+        <input autofocus name="Name" id="name" type="text" placeholder="Enter your name" required />
+      </div>
+      <!-- Name Entry Field -->
+
+
+      <!-- Email Label -->
+      <div id="rowTab">
+        <div class="labels">
+          <label id="email-label">*Email </label>
+        </div>
+      </div>
+      <!-- Email Label -->
+
+      <!-- Email Entry Field -->
+      <div id="rightTab">
+        <input name="Email" pattern="[^ @]*@[^ @]*" id="email" type="email" placeholder="Enter your email" required />
+      </div>
+      <!-- Email Entry Field -->
+
+      <!-- Age Label -->
+      <div id="rowTab">
+        <div class="labels">
+          <label id="number-label">*Age </label>
+        </div>
+      </div>
+      <!-- Age Label -->
+
+      <!-- Age Entry Field -->
+      <div id="rightTab">
+        <input name="age" id="number" type="number" placeholder="Enter your age" required min="1" max="125" />
+      </div>
+      <!-- Age Entry Field -->
+
+      <!-- Current Position Label -->
+      <div id="rowTab">
+        <div class="labels">
+          <label id="dropdown">Which best describes you? </label>
+        </div>
+      </div>
+      <!-- Current Position Label -->
+
+      <!-- Current Position Entry Field -->
+      <div id="rightTab">
+        <select id="dropdown" name="dropdown" placeholder="Choose one">
+          <option value="Select One" disable selected>Select One</option>
+          <option value="Student">Student</option>
+          <option value="Full Time Employee">Full Time Employee</option>
+          <option value="Part Time Employee">Part Time Employee</option>
+          <option value="Self Employed">Self Employed</option>
+          <option value="Retired">Retired</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <!-- Current Position Entry Field -->
+
+      <!-- Fan Status Label -->
+      <div id="rowTab">
+        <div class="labels">
+          <label id="radio-label">How much of a Marvel Cinematic Universe fan are you?</label><br />
+        </div>
+      </div>
+      <!-- Fan Status Label -->
+
+      <!-- Fan Status Field -->
+      <div id="rightTab">
+        <input type="radio" name="fandom" value="SUPERFAN" />I'm a SUPERFAN<br />
+        <input type="radio" name="fandom" value="sidekick fan" />I'm a sidekick fan<br />
+        <input type="radio" name="fandom" value="What?" />What's the Marvel Cinematic Universe?<br />
+      </div>
+      <!-- Fan Status Field -->
+
+      <!-- Favorite Hero Label -->
+      <div id="rowTab">
+        <div class="labels">
+          <label id="checkboxes">Who are your favorite superheros? *Check at least 3*</label>
+        </div>
+        <br />
+      </div>
+      <!-- Favorite Hero Label -->
+
+      <!-- Favorite Hero Entry Field -->
+      <div id="rightTab">
+        <input type="checkbox" name="superhero0" value="Ironman" />Ironman<br />
+        <input type="checkbox" name="superhero1" value="Captain America" />Captain America<br />
+        <input type="checkbox" name="superhero2" value="Thor" />Thor<br />
+        <input type="checkbox" name="superhero3" value="Hulk" />Hulk<br />
+        <input type="checkbox" name="superhero4" value="Black Widow" />Black
+        Widow<br />
+        <input type="checkbox" name="superhero5" value="Hawkeye" />Hawkeye<br />
+        <input type="checkbox" name="superhero6" value="Scarlett Witch" />Scarlett Witch<br />
+        <input type="checkbox" name="superhero7" value="Black Panther" />Black Panther<br />
+        <input type="checkbox" name="superhero8" value="Spider-Man" />Spider-Man<br />
+        <input type="checkbox" name="superhero9" value="Ant Man" />Ant Man<br />
+      </div>
+      <!-- Favorite Hero Entry Field -->
+
+      <!-- Super Powers Label -->
+      <div id="rowTab">
+        <div class="labels">
+          <label id="textarea">Describe your ideal set of superpowers in the box below</label>
+        </div>
+        <br />
+      </div>
+      <!-- Super Powers Label -->
+
+      <!-- Super Powers Entry Field -->
+      <div id="rightTab">
+        <textarea></textarea>
+      </div>
+      <!-- Super Powers Entry Field -->
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <footer>
+    <h5>Nicholas Phillips &copy; 2019</h5>
+  </footer>
+</body>
+
+</html>

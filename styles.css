@@ -1,0 +1,42 @@
+html,
+body {
+  background-color: #e23636;
+  text-align: center;
+  font-size: 62.5%;
+  min-width: 32rem;
+}
+
+#title {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#form-outer {
+  background-color: #518cca;
+  font-size: 1.8rem;
+  width: 75%;
+  max-width: 90rem;
+  margin: 0 auto;
+  border-radius: 0.8rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#description {
+  font-size: 1.5rem;
+}
+
+.labels {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+  text-align: center;
+  vertical-align: top;
+  margin-top: 0.5rem;
+}
+
+
+footer {
+  font-size: 1.7rem;
+}
